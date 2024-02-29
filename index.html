@@ -13,6 +13,9 @@
 </head>
 <body>
 <!--javaScript para togge menu-->
+    <script async
+        src="https://js.stripe.com/v3/buy-button.js">
+    </script>
     <script>
         var navLinks = document.getElementById("navLinks");
         function showMenu(){
@@ -37,17 +40,17 @@
     </section>
     <!---footer-->
     <section class="footer" id="fooder">
-      <form>
-          <main>
-            <div class="product" >
-            <div class="product_title"></div>
-            <div class="product_price"></div>
-            <div class="product_image"><img src="grupo.png"></div>
-                  <div class="product_button">
-                  <div class="product_button_label" ><a href="https://play.google.com/store/apps/details?id=com.postlife777&pcampaignid=web_share">Comprar Agora</a></div>
-                  </div>
-                </div>
-        </main>
-    </section>
+         <div id="smart-button-container">
+            <div class="whats" id="whats">
+                </a>
+                  <stripe-buy-button
+                  buy-button-id="buy_btn_1OpE8DJBGMeYcARublrGQPEz"
+                  publishable-key="pk_live_51OoaX8JBGMeYcARuPt0GENTJTtWjZZe5TF7r4KdQGNK1hiqvjY8NQiZtjXuyHsPnMRHCQIrTe3GcqVkCVX3bvveZ00UkJEtkTa"
+                     >
+                 </stripe-buy-button>
+                 </div>  
+               </div>   
+        </div>
+  </section>
 </body>
 </html> 
